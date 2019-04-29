@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import NamesList from './NamesList.js' 
 
 function App() {
   return (
@@ -10,14 +11,10 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <div>
+          <NamesList listType = {"ol"} listOfNames= {["C#", "JavaScript", "Html", "Python", "C++"]}/>
+          <NamesList listType = {"ul"} listOfNames= {["C#", "JavaScript", "Html", "Python", "C++"]}/>
+        </div>
       </header>
     </div>
   );
